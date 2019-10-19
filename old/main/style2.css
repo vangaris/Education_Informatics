@@ -1,0 +1,130 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	/* Βάζει την φωτογραφία πιο πίσω να φαίνεται σαν πραγματικο background*/
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/space.jpg);
+	background-size: cover;
+	background-position: center;
+	
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkred;
+  color: white;
+}
+
+/*Εξεργασία div hero*/
+.hero {
+	position: relative;
+	width: 0px;
+	left: 30px;
+	top: 0px;
+}
+
+/* Επεξεργασία Logo*/
+.logo img {
+	width: 90px;
+	margin-left: 30px; 
+	height: auto;
+	float: left;
+	top: 0px;
+}
+
+/* Μορφοποίηση της form ως προς τη στοιχιση, γραμματοσειρα, μέγεθος κλπ*/
+#quiz {
+	top: 200px;
+	position: absolute;
+	margin-left: 100px;
+	background:transparent;
+	border: solid white;
+	padding: 10px 20px 10px 20px;
+	width: 500px;
+	border-radius: 70px;
+	
+}
+
+
+/* Δημιουργία καινουριου style για την τοποθέτηση κειμένου Take a quiz και κουμπιου level 2 */
+.heroIndex {
+	position: absolute;
+	width: 0px;
+	left: 0px;
+	top: 0px;
+}
+
+/* Χρώμα κειμένου*/
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 90px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+/* Επεξεργασία class button */
+.button {
+	margin-top: 30px;
+	margin-left: 400px;
+}
+
+.btn {
+	border: 1px solid white;
+	padding: 20px 60px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/* επεξεργασία κουμπιών*/
+.btn-one {
+	font-family: "Roboto", sans-serif;
+	background-color: transparent;
+}
+
+.btn-two {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-three {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+}
+
+.btn-two:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+}
+
+.btn-three:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+}
+

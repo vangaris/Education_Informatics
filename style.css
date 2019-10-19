@@ -1,0 +1,162 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	/* Βάζει την φωτογραφία πιο πίσω να φαίνεται σαν πραγματικο background*/
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/space.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  width: 550px;
+  float: right;
+
+}
+
+.topnav a {
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkred;
+  color: white;
+}
+
+/*Εξεργασία div hero*/
+.hero {
+	position: relative;
+	width: 0px;
+	left: 30px;
+	top: 5px;
+	font-size: 22px;
+}
+
+/* Επεξεργασία Logo*/
+.logo img {
+	width: 90px;
+	margin-left: 30px; 
+	height: auto;
+	float: left;
+	top: 200px;
+}
+
+
+/* Μορφοποίηση της form ως προς τη στοιχιση, γραμματοσειρα, μέγεθος κλπ*/
+#quiz {
+	top: 100px;
+	position: absolute;
+	margin-left: -100px;
+	background:transparent;
+	border: solid white;
+	padding: 10px 20px 10px 20px;
+	width: 450px;
+	border-radius: 10px;
+	
+}
+
+
+
+/* Δημιουργία καινουριου style για την τοποθέτηση κειμένου Take a quiz και κουμπιου level 2 */
+.heroIndex {
+	position: absolute;
+	width: 1200px;
+	left: 50px;
+	top: 60px;
+}
+
+/* Χρώμα κειμένου*/
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+/* Επεξεργασία class button */
+.button {
+	margin-top: 30px;
+	margin-left: 400px;
+}
+
+.btn {
+	border: 1px solid white;
+	padding: 20px 60px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/* επεξεργασία κουμπιών*/
+.btn-one {
+	font-family: "Roboto", sans-serif;
+	background-color: transparent;
+}
+
+.btn-two {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-three {
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+}
+
+.btn-two:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+}
+
+.btn-three:hover {
+	background-color: #806000;
+	transition: all 0.5s ease-in;
+}
+
+
+/* φτιαχνει την εμφανιση της φορμας*/
+
+input[type=text] {
+	font-family: "Roboto", sans-serif;
+	color: white;
+	background: transparent;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/*καθορισμός θέσης της φόρμας*/
+
+  form
+  {
+  	color: white;
+  	font-family: "Roboto", sans-serif;
+  	font-size: 19px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    z-index: 1;
+  }
+
+  

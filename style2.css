@@ -1,0 +1,126 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	/* Βάζει την φωτογραφία πιο πίσω να φαίνεται σαν πραγματικο background*/
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/space.jpg);
+	background-size: cover;
+	background-position: center;
+	
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  width: 550px;
+  float: right;
+
+}
+
+.topnav a {
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkred;
+  color: white;
+}
+
+/*Εξεργασία div hero*/
+.hero {
+	position: relative;
+	width: 0px;
+	left: 30px;
+	top: 0px;
+}
+
+/* Επεξεργασία Logo*/
+.logo img {
+	width: 90px;
+	margin-left: 30px; 
+	height: auto;
+	float: left;
+	top: 0px;
+}
+
+/* Μορφοποίηση της form ως προς τη στοιχιση, γραμματοσειρα, μέγεθος κλπ*/
+#quiz {
+	position: absolute;
+	margin-left: 400px;
+	background:transparent;
+	border: solid white;
+	padding: 10px 20px 10px 20px;
+	width: 500px;
+	border-radius: 10px;
+	
+}
+
+/* Μορφοποίηση input να εχουν απόσταση 20px*/
+input {
+	margin-bottom: 20px;
+}
+
+/* Μορφοποιήση textbook ως προς το μέγεθος, τη γραμματοσείρα κ.α.*/
+#textbox {
+	height: 25px;
+	width: 230px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding - left: 5px;
+}
+
+/* Μορφοποιήση του κουμποιου submit ως προς το χρωμα, τη γραμματοσειρα κ.α.*/
+#but {
+	background: darkgreen;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .8s; /* χρόνο που γίνεται ασπρο το κουμπί (μέσω του but: hover)*/
+	margin-top: 0px;
+	margin-left: 40px;
+	left: 100px;
+}
+
+#but:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+
+}
+
+/* Μορφοποιήση του div μου περιέχει το submit*/
+#after_submit {
+	visibility: hidden;
+	background: transparent;
+	padding: 10px 20px 10px 20px;
+	width: 300px;
+	border-radius: 20px;
+	float: right;
+	margin-left: 20px;
+	font-size: 30px;
+
+}
+
+#picture {
+	width: 275px;
+	height: 170px;
+}
+
+#mc {
+	display: inline;
+}
+
+a {text-decoration: none; }

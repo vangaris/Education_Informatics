@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Εμφανίζει τον τιτλο στην μπάρα στον φυλλομετρητή -->
+	<title> Physics Quiz </title>
+	<!-- Σύνδεση με το  style.css-->
+	<link href="style1.css" rel="stylesheet">
+
+	<!-- Χρησιμοποιούμε  γραμματοσειρά από την  google-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!-- Script source ανοίγω javascript αρχεία και μπορούμε να βάλουμε οτιδήποτε μέσα σε αυτά , ουσιαστικά λέει στον φυλλιμετρητή  οτι υπάρχει ένα αρχείο js-->
+	<script src="main1.js"></script>
+
+
+</header>
+
+</head>
+
+<body>
+
+        <!-- Δημιουργία div κλάση-->
+        <div class="row">
+            <!-- Προσθήκη λογοτύπου-->
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+        </div>
+        <div class="hero">
+            <h1>Learn Physics</h1>
+        </div>
+
+
+	<!-- Δημιουργία της φόρμας-->
+	<form id = "quiz" name="quiz">
+
+	<p>Ποιός υπέθεσε πρώτος οτι για το μήλο που πέφτει, η δύναμη που προκαλεί την κίνησή του ασκείται από την γή</p>
+
+	<!-- Δημιουργο΄υμε είσοδο για τον χρήστη με τύπο text-->
+	<input id="textbox" type="text" name="question1">
+
+	<p> Οι δυνάμεις προκαλούν παραμόρφωση των σωμάτων που ασκούνται;</p>
+
+	<!-- Δημιουργία 2 radiobutton, sto name βάζουμε ίδιο όνομα ώστε να επιλέγετε πάντα το ένα απο τα δ΄ύο και στο value το σωστό ή λάθος  για πολλαπλές επιλογές-->
+
+	<!--ερώτηση 2 -->
+	<label for="q2a"> Σωστό </label>
+	<input id="q2a" type="radio" name="question2" value="swsto">
+	<label for="q2b"> Λάθος </label>
+	<input id="q2b" type="radio" name="question2" value="lathos">
+
+	<!--ερώτηση 3 -->
+	<p> Οι δυνάμεις χωρίζονται σε δύο κατηγορίες:αυτές που ασκούνται κατα την επαφή δυο σωμάτων και οι δυνάμεις που ασκούνται από απόσταση</p>
+	<label for="q3a"> Σωστό </label>
+	<input id="q3a" type="radio" name="question3" value="swsto">
+	<label for="q3b"> Λάθος </label>
+	<input id="q3b" type="radio" name="question3" value="lathos">
+
+	<!--ερώτηση 4 -->
+	<p>Η δύναμη είναι μονόμετρο μέγεθος</p>
+	<label for="q4a"> Σωστό </label>
+	<input id="q4a" type="radio" name="question4" value="swsto">
+	<label for="q4b"> Λάθος </label>
+	<input id="q4b" type="radio" name="question4" value="lathos">
+
+	<!--ερώτηση 5 -->
+	<p> Μονάδα μέτρησης του βάρους είναι το:</p>
+	<input id="textbox" type="text" name="question5">
+
+	<!--ερώτηση 6 -->
+	<p>Η μάζα ενός αστροναύτη στην Σελήνη ειναι διαφορετική αποτι στην Γη</p>
+	<label for="q6a"> Σωστό </label>
+	<input id="q6a" type="radio" name="question6" value="swsto">
+	<label for="q6b"> Λάθος </label>
+	<input id="q6b" type="radio" name="question6" value="lathos">
+
+
+	<!--ερώτηση 7 -->
+	<p>Όσο μεγαλύτερη είναι η μάζα ενός σώματος τόσο δυσκολότερα μπορεί να μεταβληθεί η ταχύτητά του</p>
+	<label for="q7a"> Σωστό </label>
+	<input id="q7a" type="radio" name="question7" value="swsto">
+	<label for="q7b"> Λάθος </label>
+	<input id="q7b" type="radio" name="question7" value="lathos">
+
+	<!--ερώτηση 8 -->
+	<p>Αν σπρώξουμε ένα βιβλίο πάνω στο τραπέζι η δύναμη που προκαλεί το σταμάτημα του βιβλίου είναι η δύναμη της :</p>
+	<input id="textbox" type="text" name="question8">
+
+
+	<!-- Δημιουργία του  submit, value εμφαν΄ίζετε στον χρήστη, to check είναι μέθοδος η οποία  εκτελείται από το αρχείο main1.js όταν πατήσει ο χρήστης το  Submit--><br><br>
+	<label for="but"> </label>
+	<input id="but" type="button" value="Go back" onclick="check();">
+	<input id="but" type="button" value="Continue" onclick="check();"> <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+
+	</form>
+	<!-- Εμφανίζονται μόνο  αν πατήσει κάποιος το κουμπί Submit -->
+	<!-- Δημιουργία νέου div μετα το  click-->
+	<div id = "after_submit">
+		<p id="message"> </p>
+		<p id ="number_correct"> you finished good job</p>
+		<img id="picture">
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Εμφανίζει τον τιτλο στην μπάρα στον φυλλομετρητή -->
+	<title> Physics Quiz </title>
+	<!-- Σύνδεση με το  style.css-->
+	<link href="style2.css" rel="stylesheet">
+
+	<!-- Χρησιμοποιούμε  γραμματοσειρά από την  google-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!-- Script source ανοίγω javascript αρχεία και μπορούμε να βάλουμε οτιδήποτε μέσα σε αυτά , ουσιαστικά λέει στον φυλλιμετρητή  οτι υπάρχει ένα αρχείο js-->
+	<script src="main2.js"></script>
+
+</head>
+
+<body>
+
+	<div class="topnav">
+  		<a class="active" href="index.html">Home</a>
+  		<a href="http://ebooks.edu.gr/modules/ebook/show.php/DSGYM-B200/530/3510,14392/" target="blank">Teaching Materials</a>
+  		<a href="cv.html" target="blank">About us</a>
+  		<a href='mailto:vnghenry@gmail.com, dimitkos@yahoo.gr'>Email Us</a>
+	</div>
+
+        <!-- Δημιουργία div κλάση-->
+        <div class="row">
+            <!-- Προσθήκη λογοτύπου-->
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+        </div>
+        <div class="hero">
+            <h1>Learn Physics</h1>
+        </div>
+	<!-- Δημιουργία της φόρμας-->
+	<form id = "quiz" name="quiz">
+
+		<!--ερώτηση 1 -->
+	<p>Οι δυνάμεις που έχουν ίσα μέτρα και η συνισταμένη τους είναι ίση με το μηδέν λέγονται</p>
+	<!-- Δημιουργο΄υμε είσοδο για τον χρήστη με τύπο text-->
+	<input id="textbox" type="text" name="question1">
+
+	<!--ερώτηση 2 -->
+<p>Η τάση των σωμάτων να αντιστέκονται σε οποιαδήποτε μεταβολή της κινητικής κατάστασης ονομάζεται:  </p>
+<input id="textbox" type="text" name="question2">
+
+	<!--ερώτηση 3 -->
+<p>Όταν ένα σώμα παραμένρι ακίνητο τότε η συνισταμένη δύναμη που ασκείται στο σώμα αύτο είναι :  </p>
+<input id="textbox" type="text" name="question3">
+
+	<!--ερώτηση 4 -->
+	<p>Ένα σώμα το οποίο είναι υλικό σημείο ,ισορροπεί όταν είναι ακίνητο ή επιταχύνετε </p>
+	<label for="q4a"> Σωστό </label>
+	<input id="q4a" type="radio" name="question4" value="swsto">
+	<label for="q4b"> Λάθος </label>
+	<input id="q4b" type="radio" name="question4" value="lathos">
+
+	<!--ερώτηση 5 -->
+	<p>Ένα βιβλίο ισορροπεί σε ένα θρανίο. Άν η δύναμη του βάρους είναι 5Ν να βρεθεί η κάθετη δύναμη που ασκεί το θρανίο</p>
+	<input id="textbox" type="text" name="question5">
+
+	<!--ερώτηση 6 -->
+	<p>Δύο μαθητές τραβούν με σχοινί ένα κιβώτιο προς την ίδια κατεύθυνση.Αν ο ένας μαθητής ασκεί δύναμη F1=10N και ο άλλος F2=9N να βρεθεί η συνισταμένη δύναμη ΣF</p>
+	<input id="textbox" type="text" name="question6">
+
+
+	<!--ερώτηση 7 -->
+	<p>Δύο μαθητές τραβούν έναν κρίκο με σχοινιά  προς αντίθετη κατεύθυνση.Αν η συντισταμένη που ασκείται στο σώμα είναι μηδέν(ΣF=0) και ο ένας μαθητής ασκεί δύναμη F1=12N να βρεθεί η δύναμη που ασκεί ο άλλος μαθητής στον κρίκο</p>
+	<input id="textbox" type="text" name="question7">
+
+	<!--ερώτηση 8 -->
+	<p>Ένα σώμα έχει μάζα m=2Kg και η επιτάχυνση της βαρύτητας της Γης είναι 10 m/s<sup>2</sup>.Να υπολογιστεί η δύναμη του βάρους</p>
+	<input id="textbox" type="text" name="question8">
+
+
+	<!-- Δημιουργία του  submit, value εμφαν΄ίζετε στον χρήστη, to check είναι μέθοδος η οποία  εκτελείται από το αρχείο main1.js όταν πατήσει ο χρήστης το  Submit--><br><br>
+	<label for="but"> </label>
+	<input id="but" type="button" value="Go back" onclick="check();">
+	<input id="but" type="button" value="Continue" onclick="check();"> <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+
+	</form>
+
+	<!-- Εμφανίζονται μόνο  αν πατήσει κάποιος το κουμπί Submit -->
+	<!-- Δημιουργία νέου div μετα το  click-->
+	<div id = "after_submit">
+		<p id="message"> </p>
+		<p id ="number_correct"> you finished good job</p>
+		<img id="picture">
+	</div>
+
+</body>
+</html>
